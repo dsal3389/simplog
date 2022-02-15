@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import UploadRouteComponent from './routes/upload/upload.route';
+import ViewRouteComponent   from './routes/view/view.route';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={ <App/> }>
+        <Route path="/" element={ <UploadRouteComponent/> } />
+        <Route path="/view" element={ <ViewRouteComponent /> } />
+      </Route>
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

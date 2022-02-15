@@ -1,0 +1,46 @@
+
+:root{
+    --borderColor: rgba(0, 0, 0, .2);
+}
+
+.logStep {
+    border-bottom: 1px solid var(--borderColor);
+    padding-bottom: 8px;
+    margin: 16px 0;
+}
+
+.formatInp {
+    width: 100%;
+    outline: none;
+    padding: 3px 6px;
+    border: 1px solid var(--borderColor);
+    font-size: 16px;
+}
+
+.fileContent {
+    height: 350px;
+    background-color: #0f0f0f;
+    color: #fefefe;
+    line-height: 1;
+    padding: 8px;
+    overflow: auto;
+    margin-bottom: 8px;
+}
+
+.fileContent > p {
+    margin: 0;
+}
+
+.submitFile {
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    padding: 4px 8px;
+    border: 1px solid var(--borderColor);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.submitFile:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
